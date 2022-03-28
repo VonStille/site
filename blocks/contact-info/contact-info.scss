@@ -1,0 +1,40 @@
+.contact-info {
+    background-color: rgba(51, 51, 51, 0.75);
+    opacity: .9;
+    position: fixed;
+    z-index: 1;
+    height: 100%;
+
+    @media screen and (max-width:992px) {
+        display: none;
+    }
+
+    &__inner {
+        display: inline-flex;
+        flex-direction: column-reverse;
+        padding-bottom: 7vh;
+        align-items: center;
+        gap: 20px;
+        max-width: 150px;
+        height: 100%;
+    }
+
+    &__text {
+        margin-bottom: 180px;
+        transform: rotate(270deg);
+        font-family: $fontbold;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 25px;
+        letter-spacing: 0.1em;
+        text-align: left;
+        width: 300px;
+        text-transform: uppercase;
+    }
+
+    &__line {
+        padding-bottom: 30px;
+    }
+
+}

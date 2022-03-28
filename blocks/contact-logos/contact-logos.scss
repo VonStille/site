@@ -1,0 +1,17 @@
+.contact-logos {
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        align-items: center;
+    }
+
+    &__img {
+        max-width: 26px;
+        max-height: 26px;
+
+        &:hover {
+            filter: brightness(20);
+        }
+    }
+}

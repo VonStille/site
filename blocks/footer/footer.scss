@@ -1,0 +1,21 @@
+.footer {
+
+    height: 80px;
+    display: flex;
+    border-top: 2px solid rgba(86, 86, 86, 1);
+    align-items: center;
+    justify-content: space-between;
+
+    @media screen and (max-width:768px) {
+        margin-top: 60px;
+    }
+
+    &__text {
+        margin-top: 20px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 150%;
+        color: #989898;
+    }
+}

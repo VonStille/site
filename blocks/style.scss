@@ -1,0 +1,126 @@
+@import "reset";
+
+@mixin fontbase() {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+$fontsoft: 'Open Sans';
+$fontbold:'Open Sans Condensed';
+
+@mixin fontbase() {
+    font-family: $fontsoft;
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+}
+
+body {
+    @include fontbase();
+    background-color: #333;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.container {
+
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    max-width: 1110px;
+
+    @media screen and (max-width:1400px) {
+        width: 992px;
+    }
+
+    @media screen and (max-width:992px) {
+        max-width: 768px;
+    }
+
+    @media screen and (max-width:768px) {
+        width: 510px;
+    }
+}
+
+.button {
+    background-color: #D1A954;
+    cursor: pointer;
+    color: inherit;
+    font-family: $fontbold;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    width: 160px;
+    height: 50px;
+}
+
+.title {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+
+    &__text {
+        font-weight: 300;
+        font-size: 48px;
+        line-height: 65px;
+        text-align: center;
+        letter-spacing: 10%;
+        word-spacing: 15px;
+        color: #D1A954;
+        padding-top: 150px;
+        padding-bottom: 100px;
+        text-transform: uppercase;
+
+        &_color_white {
+            color: white;
+        }
+    }
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+
+
+@import "header/header.scss";
+@import "about/about.scss";
+@import "partners/partners.scss";
+@import "donations/donations.scss";
+@import "footer/footer.scss";
+@import "awards/awards.scss";
+@import "products/products.scss";
+@import "contact-info/contact-info.scss", "contact-logos/contact-logos.scss", "menu/menu.scss", "text-info/text-info.scss", "slider-jq/slider-jq.scss", "about-numbers/about-numbers.scss";
+
+
+
+
+
+
+
+@media screen and (max-width:768px) {
+
+
+
+    .title {
+        padding-top: 60px;
+
+        &__text {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+    }
+}
