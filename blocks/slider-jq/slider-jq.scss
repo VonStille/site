@@ -1,0 +1,52 @@
+.slider-jq {
+
+    height: 570px;
+    width: 370px;
+    overflow: hidden;
+
+    @media screen and (max-width:1400px) {
+        display: none;
+    }
+
+    &__content {
+        width: 1480px;
+        height: 510px;
+        display: flex;
+        background: orange;
+        position: relative;
+        left: 0;
+        transition: all ease 1s;
+    }
+
+    &__img {
+        height: 510px;
+        width: 370px;
+    }
+
+    &__nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+    &__prev {
+        width: 109px;
+        height: 25px;
+        background: url(../img/prev.png);
+
+        &:hover {
+            filter: brightness(10);
+        }
+    }
+
+    &__next {
+        width: 109px;
+        height: 25px;
+        background: url(../img/next.png);
+
+        &:hover {
+            filter: brightness(10);
+        }
+    }
+}

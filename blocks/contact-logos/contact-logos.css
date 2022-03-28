@@ -1,0 +1,24 @@
+.contact-logos__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 25px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact-logos__img {
+  max-width: 26px;
+  max-height: 26px;
+}
+
+.contact-logos__img:hover {
+  -webkit-filter: brightness(20);
+          filter: brightness(20);
+}
+/*# sourceMappingURL=contact-logos.css.map */
